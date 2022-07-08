@@ -100,8 +100,6 @@ app.use((req, res, next) => {
 app.use('/', userRoutes);
 app.use('/trains', trainRoutes)
 app.use('/trains/:id/reviews', reviewRoutes)
-
-
 app.get('/', (req, res) => {
     res.render('home')
 });
